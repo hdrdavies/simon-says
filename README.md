@@ -6,7 +6,7 @@ Each round adds one random item to the end of the sequence. When the sequence is
 Developed with React, Redux, redux-thunk, axios, styled components
 
 #### TODO
--Add tests for asynchronous logic (AJAX requests)
+-Add tests for asynchronous logic (AJAX requests)  
 -Add UI tests with something like enzyme
 
 ## How to run the project
