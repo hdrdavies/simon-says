@@ -1,7 +1,7 @@
 import React from 'react'
 import { Container, Image, Text } from './style/Item'
 
-const Item = ({
+const Item = React.memo(({
   item: {
     index,
     name,
@@ -29,6 +29,6 @@ const Item = ({
     />
     <Text isHighlighted={isHighlighted}>{name}</Text>
   </Container>
-)
+))
 
 export default Item

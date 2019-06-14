@@ -22,7 +22,7 @@ class GameContainer extends React.Component {
   }
 }
 
-const Game = ({
+const Game = React.memo(({
   resetGame,
   game: {
     isGameOver,
@@ -39,7 +39,7 @@ const Game = ({
     {isGameOver && <GameOver score={score} resetGame={resetGame} />}
     {!isGameOver && hasItems && <Board />}
   </div>
-)
+))
 
 export default connect(
   ({ game, items }) => ({

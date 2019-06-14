@@ -2,7 +2,7 @@ import React from 'react'
 import { getRankingForScore } from './helpers'
 import { Button, Container } from './style/GameOver'
 
-const GameOver = ({
+const GameOver = React.memo(({
   resetGame,
   score
 }) => (
@@ -14,6 +14,6 @@ const GameOver = ({
     <p>{getRankingForScore(score)}</p>
     <Button onClick={() => resetGame()}>Start again</Button>
   </Container>
-)
+))
 
 export default GameOver

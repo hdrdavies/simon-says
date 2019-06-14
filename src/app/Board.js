@@ -23,7 +23,7 @@ class BoardContainer extends React.Component {
   }
 }
 
-const Board = ({
+const Board = React.memo(({
   onOptionClick,
   game: {
     score,
@@ -44,7 +44,7 @@ const Board = ({
       ))}
     </Grid>
   </Container>
-)
+))
 
 export default connect(
   ({ game }) => ({ game }),
