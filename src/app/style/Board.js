@@ -10,9 +10,9 @@ export const Title = styled.p`
 
 export const Grid = styled.div`
   margin: 0 auto;
-  max-width: 400px;
+  max-width: 200px;
   
-  @media (max-width: 400px) {
-    max-width: 200px;
+  @media (min-width: 400px) {
+    max-width: 400px;
   }
 `

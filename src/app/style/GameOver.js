@@ -2,7 +2,7 @@ import styled from 'styled-components'
 
 export const Container = styled.div`
   text-align: center;
-   position: absolute;
+  position: absolute;
   left: 50%;
   top: 50%;
   -webkit-transform: translate(-50%, -50%);
